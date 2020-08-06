@@ -2,13 +2,13 @@ namespace Bee_Keeping
 {
   public class Bee
   {
-    public string Name;
-    public float Size;
+    public string name;
+    public float size;
 
     public Bee(string name, float size)
     {
-      Name = name;
-      Size = size;
+      this.name = name;
+      this.size = size;
     }
   }
 }

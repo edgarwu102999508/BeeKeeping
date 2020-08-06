@@ -5,19 +5,19 @@ namespace Bee_Keeping
   public class Beehive
   {
     Bee bee;
-
-    public List<Bee> Bees;
-    public int MaxAmountOfBees;
-
-    public Beehive(List<Bee> bees)
+    public int maxAmountOfBees;
+    public Bee[] bees;
+    public Beehive(Bee[] bees, int maxAmountOfBees)
     {
-      Bees = bees;
+      this.bees = bees;
+      this.maxAmountOfBees = maxAmountOfBees;
     }
 
-    public float CollectHoney(int days)
+    public float collectHoney(int days)
     {
-      float Amount = days * bee.Size * 0.2f;
-      return Amount;
+
+      float amount = days * bee.size * 0.2f;
+      return amount;
     }
   }
 }
